@@ -1,0 +1,15 @@
+{
+  "name": "legendary-mazes",
+  "version": "1.0.0",
+  "description": "a tiny javascript library for creating legendary mazes",
+  "module": "src/legendary-mazes.js",
+  "sideEffects": false,
+  "scripts": {
+    "start": "serve"
+  },
+  "author": "Wolfger Schramm <wolfger@spearwolf.de>",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^11.2.0"
+  }
+}

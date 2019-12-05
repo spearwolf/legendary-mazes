@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#401">
+  <title>legendary-mazes.js demo</title>
+  <style>
+    html, body { height: 100%; }
+    body {
+      background-color: #4a4a4a;
+      overflow: hidden;
+    }
+    :root {
+      --margin: 10px;
+    }
+    .container {
+      position: absolute;
+      top: var(--margin);
+      bottom: var(--margin);
+      left: var(--margin);
+      right: var(--margin);
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      image-rendering: pixelated;
+    }
+  </style>
+</head>
+<body>
+  <div class=container>
+    <canvas id="maze-canvas"></canvas>
+  </div>
+  <script type=module src="./src/demo.js"></script>
+</body>
+</html>
