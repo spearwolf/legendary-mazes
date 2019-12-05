@@ -1,5 +1,5 @@
 {
-  "name": "legendary-mazes",
+  "name": "@spearwolf/legendary-mazes",
   "version": "1.0.0",
   "description": "a tiny javascript library for creating legendary mazes",
   "repository": {
