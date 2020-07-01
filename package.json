@@ -1,13 +1,10 @@
 {
-  "name": "@spearwolf/legendary-mazes",
-  "version": "1.0.1",
+  "name": "legendary-mazes",
+  "version": "1.1.0",
   "description": "A tiny javascript module for creating legendary mazes ;-)",
   "repository": {
     "type": "git",
     "url": "https://github.com/spearwolf/legendary-mazes.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   },
   "main": "./legendary-mazes.js",
   "module": "./legendary-mazes.js",

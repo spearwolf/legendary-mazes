@@ -23,13 +23,13 @@ Then simply call the following url with a browser of your choice: [http://localh
 1. install the module in your project
 
 ```sh
-npm i @spearwolf/legendary-mazes
+npm i legendary-mazes
 ```
 
 2. import what you need ..
 
 ```js
-import {MazeGrid, RecursiveBacktracker, ...} from '@spearwolf/legendary-mazes';
+import {MazeGrid, RecursiveBacktracker, ...} from 'legendary-mazes';
 ```
 
 #### API
