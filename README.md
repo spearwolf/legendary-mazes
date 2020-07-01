@@ -4,9 +4,9 @@ a tiny javascript library for creating legendary mazes :sparkles:
 
 ![a legendary maze](./legendary-maze-1.png)
 
-### Demo
+### Demo or Die
 
-In order to start the demo app you need to install the dependencies first:
+In order to start the local demo app you need to install the dependencies first:
 
 ```sh
 npm install

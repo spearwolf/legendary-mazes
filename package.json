@@ -1,7 +1,7 @@
 {
   "name": "@spearwolf/legendary-mazes",
-  "version": "1.0.0",
-  "description": "a tiny javascript library for creating legendary mazes",
+  "version": "1.0.1",
+  "description": "A tiny javascript module for creating legendary mazes ;-)",
   "repository": {
     "type": "git",
     "url": "https://github.com/spearwolf/legendary-mazes.git"
@@ -9,7 +9,10 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "module": "src/legendary-mazes.js",
+  "main": "./src/legendary-mazes.js",
+  "module": "./src/legendary-mazes.js",
+  "exports": "./src/legendary-mazes.js",
+  "type": "module",
   "sideEffects": false,
   "scripts": {
     "start": "serve"
@@ -17,6 +20,6 @@
   "author": "Wolfger Schramm <wolfger@spearwolf.de>",
   "license": "MIT",
   "devDependencies": {
-    "serve": "^11.2.0"
+    "serve": "^11.3.2"
   }
 }
