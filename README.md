@@ -4,6 +4,7 @@ a tiny javascript library for creating legendary mazes :sparkles:
 
 ![a legendary maze](./legendary-maze-1.png)
 
+I took the idea for the _recursive backtracker_ algorithm from this book: [Mazes for Programmers](https://pragprog.com/titles/jbmaze/)
 
 ### Demo or Die
 
