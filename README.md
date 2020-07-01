@@ -1,5 +1,7 @@
 L E G E N D A R Y &nbsp; M A Z E S
 
+[![npm version](https://badge.fury.io/js/legendary-mazes.svg)](https://badge.fury.io/js/legendary-mazes)
+
 a tiny javascript library for creating legendary mazes :sparkles:
 
 ![a legendary maze](./legendary-maze-1.png)
@@ -7,6 +9,8 @@ a tiny javascript library for creating legendary mazes :sparkles:
 I took the idea for the _recursive backtracker_ algorithm from this book: [Mazes for Programmers](https://pragprog.com/titles/jbmaze/)
 
 ### Demo or Die
+
+Just look at this codepen: https://codepen.io/spearwolf/full/yLePxBw
 
 In order to run the local demo app you need to start a local http server:
 
