@@ -9,17 +9,14 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "main": "./src/legendary-mazes.js",
-  "module": "./src/legendary-mazes.js",
-  "exports": "./src/legendary-mazes.js",
+  "main": "./legendary-mazes.js",
+  "module": "./legendary-mazes.js",
+  "exports": "./legendary-mazes.js",
   "type": "module",
   "sideEffects": false,
   "scripts": {
     "start": "serve"
   },
   "author": "Wolfger Schramm <wolfger@spearwolf.de>",
-  "license": "MIT",
-  "devDependencies": {
-    "serve": "^11.3.2"
-  }
+  "license": "MIT"
 }

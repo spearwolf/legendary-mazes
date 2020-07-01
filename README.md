@@ -4,20 +4,18 @@ a tiny javascript library for creating legendary mazes :sparkles:
 
 ![a legendary maze](./legendary-maze-1.png)
 
+
 ### Demo or Die
 
-In order to start the local demo app you need to install the dependencies first:
+In order to run the local demo app you need to start a local http server:
 
 ```sh
-npm install
+npx serve
 ```
 
-After that, launch the demo with:
+Then simply call the following url with a browser of your choice: [http://localhost:5000/](http://localhost:5000/)
 
-```sh
-npm start
-```
 
 ### Documentation
 
-Take a look into [demo.js](./src/demo.js) for an example how to use this library.
+Take a look into [./demo.js](./demo.js) for an example how to use this library.
