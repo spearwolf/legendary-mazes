@@ -2,7 +2,7 @@ L E G E N D A R Y &nbsp; M A Z E S
 
 [![npm version](https://badge.fury.io/js/legendary-mazes.svg)](https://badge.fury.io/js/legendary-mazes)
 
-a tiny javascript library for creating legendary mazes :sparkles:
+A tiny javascript library for creating legendary mazes :sparkles:
 
 ![a legendary maze](./legendary-maze-1.png)
 
@@ -25,13 +25,13 @@ Then simply call the following url with a browser of your choice: [http://localh
 
 #### Getting Started
 
-1. install the module in your project
+1. Install the module in your project
 
 ```sh
 npm i legendary-mazes
 ```
 
-2. import what you need ..
+2. Import what you need
 
 ```js
 import {MazeGrid, RecursiveBacktracker, ...} from 'legendary-mazes';
