@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #4a4a4a;
+  background: radial-gradient(#a88, #234);
+  overflow: hidden;
+}
+
+:root {
+  --margin: 10px;
+}
+
+.container {
+  position: absolute;
+  top: var(--margin);
+  bottom: var(--margin);
+  left: var(--margin);
+  right: var(--margin);
+  padding: 10px 0 50px;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
