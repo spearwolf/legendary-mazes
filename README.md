@@ -8,6 +8,7 @@ A tiny javascript library for creating legendary mazes :sparkles:
 ![a legendary maze animation](./legendary-maze.gif)
 
 I took the idea for the _recursive backtracker_ algorithm from this fantastic book: [Mazes for Programmers](https://pragprog.com/titles/jbmaze/)
+&mdash; but implemented it relatively freely because it was so much fun :smiley:
 
 ### Demo or Die
 
