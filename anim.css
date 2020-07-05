@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #4a4a4a;
+  background: radial-gradient(#a88, #234);
+  overflow: hidden;
+}
+
+:root {
+  --margin: 0;
+}
+
+.container {
+  position: absolute;
+  top: var(--margin);
+  bottom: var(--margin);
+  left: var(--margin);
+  right: var(--margin);
+}
+
+.nextStepButton {
+  display: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-appearance: none;
+  user-select: none;
+
+  font-size: 16px;
+  outline: none;
+  padding: .25em .5em;
+  border-radius: 2px;
+  cursor: pointer;
+
+  border: 1px solid #000;
+  box-shadow: 0 0 0 1px #fff;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+}
+
+.nextStepButton:hover {
+  box-shadow: 0 0 0 1px #000;
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
