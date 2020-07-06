@@ -43,4 +43,4 @@ import {MazeGrid, RecursiveBacktracker, ...} from 'legendary-mazes';
 
 #### API
 
-Take a look into [./demo.js](./demo.js) for an example how to use this library.
+Take a look into [./demo.js](./demo.js) or [./codepen/](./codepen/) for examples how to use this library.
