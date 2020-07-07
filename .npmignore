@@ -6,3 +6,7 @@ legendary-mazes-social-preview.png
 anim.js
 anim.css
 anim.html
+bin/make-anim.js
+demo.js
+index.html
+.nvmrc
