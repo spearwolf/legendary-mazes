@@ -59,7 +59,6 @@ const buildNextStep = () => {
     case "distances":
       if (!distances.isFinished) {
         distances.nextStep();
-        distances.maxDistance = distances.currentDistance;
         renderer.setDistanceGrid(distances, nearColor, farColor);
         renderer.render(ctx);
         setTimeout(buildNextStep, DELAY_BETWEEN_STEPS_MS);
