@@ -3,9 +3,9 @@ import {
   MazeCanvasRenderer,
   MazeGrid,
   RecursiveBacktracker
-} from "https://unpkg.com/legendary-mazes@1.1.0/legendary-mazes.js";
+} from "https://unpkg.com/legendary-mazes@1.2.0/legendary-mazes.js";
 
-const maze = new MazeGrid(24, 24);
+const maze = new MazeGrid(20, 30);
 
 const canvas = document.getElementById("maze-canvas");
 const ctx = canvas.getContext("2d");
