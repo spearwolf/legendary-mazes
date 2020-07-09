@@ -38,7 +38,12 @@ npm i legendary-mazes
 2. Import what you need
 
 ```js
-import {MazeGrid, RecursiveBacktracker, ...} from 'legendary-mazes';
+import {
+  MazeGrid,
+  RecursiveBacktracker,
+  DistanceGrid,
+  MazeCanvasRenderer
+} from 'legendary-mazes';
 ```
 
 #### API
