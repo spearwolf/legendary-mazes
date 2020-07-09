@@ -8,16 +8,15 @@ import {
 const maze = new MazeGrid(20, 30);
 
 const canvas = document.getElementById("maze-canvas");
-const ctx = canvas.getContext("2d");
-
 canvas.width = maze.width;
 canvas.height = maze.height;
+const ctx = canvas.getContext("2d");
 
 let builder;
 let distances;
 let renderer;
 
-const initializeMaze = () => {
+function initializeMaze() {
   builder = new RecursiveBacktracker(maze);
   distances = new DistanceGrid(maze);
   renderer = new MazeCanvasRenderer(maze, [
@@ -30,49 +29,56 @@ const initializeMaze = () => {
     "#3ff",
     "#03f"
   ]);
-};
+}
 
 const nearColor = { r: 128, g: 0, b: 32 };
 const farColor = { r: 255, g: 250, b: 230 };
 
-const DELAY_BETWEEN_STEPS_MS = 20;
-const DELAY_AFTER_FINISHED_MS = 1500;
+let buildMode;
 
-let buildMode = "backtracker";
+function startMazeBuild() {
+  initializeMaze();
+  buildMode = "backtracker";
+  builder.start();
+  buildNextStep();
+}
 
-const buildNextStep = () => {
+function renderMazeStep() {
+  builder.nextStep();
+  renderer.render(ctx);
+}
+
+function startDistancesBuild() {
+  buildMode = "distances";
+  distances.start(maze.centralCell);
+  buildNextStep();
+}
+
+function renderDistancesStep() {
+  distances.nextStep();
+  renderer.setDistanceGrid(distances, nearColor, farColor);
+  renderer.render(ctx);
+}
+
+function buildNextStep() {
   switch (buildMode) {
     case "backtracker":
       if (!builder.isFinished) {
-        builder.nextStep();
-        renderer.render(ctx);
-        setTimeout(buildNextStep, DELAY_BETWEEN_STEPS_MS);
+        renderMazeStep();
+        setTimeout(buildNextStep, 20);
       } else {
-        setTimeout(() => {
-          buildMode = "distances";
-          distances.start(maze.centralCell);
-          buildNextStep();
-        }, DELAY_BETWEEN_STEPS_MS);
+        setTimeout(startDistancesBuild, 20);
       }
       break;
 
     case "distances":
       if (!distances.isFinished) {
-        distances.nextStep();
-        renderer.setDistanceGrid(distances, nearColor, farColor);
-        renderer.render(ctx);
-        setTimeout(buildNextStep, DELAY_BETWEEN_STEPS_MS);
+        renderDistancesStep();
+        setTimeout(buildNextStep, 20);
       } else {
-        setTimeout(() => {
-          buildMode = "backtracker";
-          initializeMaze();
-          builder.start();
-          buildNextStep();
-        }, DELAY_AFTER_FINISHED_MS);
+        setTimeout(startMazeBuild, 1500);
       }
   }
-};
+}
 
-initializeMaze();
-builder.start();
-buildNextStep();
+startMazeBuild();
