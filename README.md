@@ -8,9 +8,9 @@ A tiny javascript library for creating legendary mazes :sparkles:
 ![a legendary maze animation](./legendary-maze.gif)
 
 This library is using a _recursive backtracker_ [algorithm for maze generation](https://en.wikipedia.org/wiki/Maze_generation_algorithm)
-&mdash; but implemented it relatively freely because it was so much fun :smiley:
+&mdash; I implemented it relatively freely because it was so much fun :smiley:
 
-Feel free to adapt and extend the algorithm according to your needs - PR's are always welcome!
+Feel free to adapt, improve and extend the algorithm according to your needs - PR's are always welcome!
 
 ### Demo or Die
 
